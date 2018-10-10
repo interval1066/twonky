@@ -15,9 +15,11 @@ You can shoot at the twonky, one shot per turn. The Twonky will de-materialize a
 
 Movement is done by issuing the command 'm(d)', where 'd' is a cardinal compass point (N, S, E, W). Shoot the ray gun by issuing the command 's(d)', and you can look by issuing the command 'l'. Again, if you look, that's your turn and the Twonky gets to move. I wouldn't look if the twonky is less than 3 grid squares from you unless you really need to.
 
+The game draws the full maze when you exit this game. Pass option '-n' when invoking the game to inhibit it.
+
 Good luck!
 .SH OPTIONS
-Twonky takes no arguments.
+'-n' to inihibit the drawing of the maze when the game ends.
 .SH SEE ALSO 
 .SH BUGS
 Rarely the program appears to re-draw or place objects in spots where they weren't before, I haven't had the energy to track it down.

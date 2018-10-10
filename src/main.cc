@@ -11,9 +11,14 @@ using namespace std;
 using namespace hellotechie;
 
 int
-main()
+main(int argc, char** argv)
 {
-	bool bQuit = false;
+	bool bQuit = false, bDraw = true;
+	string strDraw = string(argv[1]);
+
+	if(strDraw.compare("-n") != 0)
+		bDraw = false;
+
 	char a;
 	string uin;
 
@@ -144,7 +149,7 @@ main()
 		}
 	} while(!bQuit);
 
-    g->DisplayGrid();
+	if(bDraw) g->DisplayGrid();
 
 	return EXIT_SUCCESS;
 }
