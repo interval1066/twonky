@@ -1,0 +1,7 @@
+Makefile
+config.h
+config.log
+config.status
+src/.deps/help.Po
+stamp-h1
+
