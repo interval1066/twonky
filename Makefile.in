@@ -103,7 +103,8 @@ CONFIG_CLEAN_VPATH_FILES =
 am__installdirs = "$(DESTDIR)$(sbindir)" "$(DESTDIR)$(man1dir)"
 PROGRAMS = $(sbin_PROGRAMS)
 am__dirstamp = $(am__leading_dot)dirstamp
-am_twonky_OBJECTS = src/main.$(OBJEXT) src/tgrid.$(OBJEXT)
+am_twonky_OBJECTS = src/main.$(OBJEXT) src/tgrid.$(OBJEXT) \
+	src/help.$(OBJEXT)
 twonky_OBJECTS = $(am_twonky_OBJECTS)
 twonky_LDADD = $(LDADD)
 AM_V_P = $(am__v_P_@AM_V@)
@@ -306,7 +307,7 @@ top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
 AUTOMAKE_OPTIONS = foreign
-twonky_SOURCES = src/main.cc src/tgrid.cc
+twonky_SOURCES = src/main.cc src/tgrid.cc src/help.cc
 AM_CPPFLAGS = -Wall -c -std=c++11 -I$(top_srcdir)/include
 man_MANS = man/twonky.1
 all: config.h
@@ -412,6 +413,7 @@ src/$(DEPDIR)/$(am__dirstamp):
 	@: > src/$(DEPDIR)/$(am__dirstamp)
 src/main.$(OBJEXT): src/$(am__dirstamp) src/$(DEPDIR)/$(am__dirstamp)
 src/tgrid.$(OBJEXT): src/$(am__dirstamp) src/$(DEPDIR)/$(am__dirstamp)
+src/help.$(OBJEXT): src/$(am__dirstamp) src/$(DEPDIR)/$(am__dirstamp)
 
 twonky$(EXEEXT): $(twonky_OBJECTS) $(twonky_DEPENDENCIES) $(EXTRA_twonky_DEPENDENCIES) 
 	@rm -f twonky$(EXEEXT)
@@ -424,6 +426,7 @@ mostlyclean-compile:
 distclean-compile:
 	-rm -f *.tab.c
 
+@AMDEP_TRUE@@am__include@ @am__quote@src/$(DEPDIR)/help.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@src/$(DEPDIR)/main.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@src/$(DEPDIR)/tgrid.Po@am__quote@
 

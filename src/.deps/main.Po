@@ -193,7 +193,9 @@ src/main.o: src/main.cc /usr/include/stdc-predef.h \
  /usr/include/c++/5/ext/aligned_buffer.h \
  /usr/include/c++/5/bits/shared_ptr_atomic.h \
  /usr/include/c++/5/bits/atomic_base.h \
- /usr/include/c++/5/backward/auto_ptr.h include/twonky.h include/tgrid.h
+ /usr/include/c++/5/backward/auto_ptr.h include/twonky.h include/tgrid.h \
+ /usr/include/c++/5/cstring /usr/include/string.h \
+ /usr/include/x86_64-linux-gnu/bits/string3.h
 
 /usr/include/stdc-predef.h:
 
@@ -690,3 +692,9 @@ src/main.o: src/main.cc /usr/include/stdc-predef.h \
 include/twonky.h:
 
 include/tgrid.h:
+
+/usr/include/c++/5/cstring:
+
+/usr/include/string.h:
+
+/usr/include/x86_64-linux-gnu/bits/string3.h:
