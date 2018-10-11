@@ -1,7 +1,7 @@
 TWONKY HUNT
 ====== ====
 
-Silly game after a game of the same name that used to be distributed with CDC Cyber main frames with thier NOS operating system. I spent hours wasting time playing this and 'advent', a text adventure game. Play is simple, you get dropped in a maze with a 'ray gun' and hunt the ravenous Twonky. The Twonky is also hunting you as well.
+Silly game after a game of the same name that used to be distributed with CDC Cyber main frames with thier NOS operating system. I spent hours wasting time playing this and 'advent', a text adventure game. Play is simple, you get dropped in a maze with a 'ray gun' and hunt the ravenous Twonky. The Twonky is also hunting you.
 
 Installation is the usual ./install, make, & make install 1, 2, 3. Distributed as source, so constructive comments are welcome. No real prequisites, just a decent C++ compiler.
 
