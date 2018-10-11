@@ -16,7 +16,7 @@ main(int argc, char** argv)
 	bool bQuit = false, bDraw = true;
 	string strDraw = string(argv[1]);
 
-	if(strDraw.compare("-n") != 0)
+	if(strDraw.find("-n") != string::npos)
 		bDraw = false;
 
 	char a;
