@@ -6,6 +6,7 @@
 #include <memory>
 #include <twonky.h>
 #include <tgrid.h>
+#include <cstring>
 
 using namespace std;
 using namespace hellotechie;
@@ -14,10 +15,9 @@ int
 main(int argc, char** argv)
 {
 	bool bQuit = false, bDraw = true;
-	string strDraw = string(argv[1]);
 
-	if(strDraw.find("-n") != string::npos)
-		bDraw = false;
+	if((argv[1]) && strcmp(argv[1], "-n") == 0)
+			bDraw = false;
 
 	char a;
 	string uin;
