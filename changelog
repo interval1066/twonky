@@ -1,0 +1,9 @@
+twonky (1.0) game; urgency=low
+
+  * New upstream release candidate
+
+  [ Tim O'Neil ]
+  * Fixed inability to make dist & distcheck releases by upgrading automake
+  * Added strip binary directive in Makefile.am
+  * Added '-n' invocation option to inhibit drawing of maze on quit
+
