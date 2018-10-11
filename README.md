@@ -9,7 +9,9 @@ I really wrote this as an excersise in using the automake suite of tools, sort o
 
 I tried to find references to the original implementation on the web but couldn't find any, CDC has been out of business for a while.
 
-Don't bother making dist or distcheck, I couldn't get them to work, those targets seem broken with the version of automake I'm using. I may try upgrading to see if that resolves the problem.
+Don't bother making dist or distcheck, I couldn't get them to work, those targets seem broken with the version of automake I'm using. I may try upgrading to see if that resolves the problem.*
+
+* Fixed by upgrading to automake 1.16.
 
 -Tim 10/10/2018 <interval1066@gmail.com>
 
