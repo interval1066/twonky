@@ -6,5 +6,5 @@ LDFLAGS =
 # the previous manual Makefile
 bin_PROGRAMS = twonky
 hello_SOURCES = main.cc tgrid.cc help.cc config.h tgrid.h twonky.h
-SUBDIRS = src
+SUBDIRS = src include
 ACLOCAL_AMFLAGS = -I m4
