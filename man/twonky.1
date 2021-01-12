@@ -5,9 +5,9 @@ twonky
 .SH SYNOPSIS
 twonky \- simple console game
 .SH DESCRIPTION
-Hunt the Twonky is a simple but addictive game first encountered on the CDC CYBER NOS mainframe computers in the 70's. This is a translation (not a port, I have no clue where I would even go to fund the source, it probably was written in COBOL anyway) for Linux computers using C++11.
+Hunt the Twonky is a simple but addictive game first encountered on the CDC CYBER NOS mainframe computers in the 70's. This is a translation (not a port, I have no clue where I would even go to find the source, it probably was written in COBOL anyway) for Linux computers using C++11.
 
-The game begins by dropping you, the user, into a simple maze of walls, pits, and traps of different kinds. Placed into the maze with you is the twonky, a ravenous monster bent on eating you. You will have a weapon, however, a 'ray gun' that will kill the twonky dead, temporarily. There are a few complications you must deal with. The Twonky can walk through the walls, can glide right over the pits, and can avoid the traps. You will not be able to see where you are going, you will be informed if you enter a trapped grid square or a wall. You can, if you choose, see around you one grid square in all directions, at the cost of letting the twonky advance towards you one one grid square. The Twonky moves toward you no matter what.
+The game begins by dropping you, the player, into a simple maze of walls, pits, and traps of different kinds. Placed into the maze with you is the Twonky, a ravenous monster bent on eating you. You will have a weapon, however, a 'ray gun' that will kill the twonky dead, temporarily. There are a few complications you must deal with. The Twonky can walk through the walls, can glide right over the pits, and can avoid the traps. You will not be able to see where you are going, you will be informed if you enter a trapped grid square or a wall. You can, if you choose, see around you one grid square in all directions, at the cost of letting the twonky advance towards you one one grid square. The Twonky moves toward you no matter what.
 
 If you fall into a pit, you die and the game is over. If you fall into a SuperTrap, the maze is re-created completely differently. And if the Twonky gets you, the game is over. If however you manage to avoid all the pits, traps, and the Twonky, and make it to the exit, you win.
 
@@ -15,7 +15,7 @@ You can shoot at the twonky, one shot per turn. The Twonky will de-materialize a
 
 Movement is done by issuing the command 'm(d)', where 'd' is a cardinal compass point (N, S, E, W). Shoot the ray gun by issuing the command 's(d)', and you can look by issuing the command 'l'. Again, if you look, that's your turn and the Twonky gets to move. I wouldn't look if the twonky is less than 3 grid squares from you unless you really need to.
 
-The game draws the full maze when you exit this game. Pass option '-n' when invoking the game to inhibit.
+Full maze is drawn for you when you exit. Pass option '-n' when invoking the game to inhibit.
 
 Good luck!
 .SH OPTIONS
